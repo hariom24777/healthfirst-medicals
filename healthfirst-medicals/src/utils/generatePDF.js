@@ -80,7 +80,7 @@ const generatePDF = async (
       cellPadding: 3,
     },
     headStyles: {
-      fillColor: [63, 81, 181],
+      fillColor: [97, 95, 255],
       textColor: 255,
     },
     theme: "striped",
