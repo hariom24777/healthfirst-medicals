@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       {/* Top Navbar */}
       <nav className="flex justify-between items-center p-4 bg-primary text-white">
-        <h1 className="text-xl font-bold">Patidar Medical Store</h1>
+        <h1 className="text-xl font-bold">HealthFirst Medicals</h1>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-6">

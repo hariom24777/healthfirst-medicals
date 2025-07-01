@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="p-4">
       <div className="bg-primary-variant py-10 px-4 text-center rounded-lg shadow mb-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">Welcome to Patidar Medical Store</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-white">Welcome to HealthFirst Medicals</h1>
         <p className="text-gray-200 mt-2 text-lg">Your trusted destination for quality healthcare essentials.</p>
       </div>
 

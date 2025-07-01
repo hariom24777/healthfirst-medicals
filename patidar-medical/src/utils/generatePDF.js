@@ -38,7 +38,7 @@ const generatePDF = async (
 
   // Header
   doc.setFontSize(18);
-  doc.text("Patidar Medical Store", 105, 15, { align: "center" });
+  doc.text("HealthFirst Medicals", 105, 15, { align: "center" });
 
   doc.setFontSize(12);
   doc.text("GSTIN: 22ABCDE1234F1Z5", 105, 22, { align: "center" });
