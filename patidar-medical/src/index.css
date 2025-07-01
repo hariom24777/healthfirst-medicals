@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@theme{
+  --color-primary-text: #232f34;
+
+  --color-primary: #4f39f6;
+  --color-primary-variant: #615fff;
+}
+
+body {
+  color: var(--color-primary-text);
+}
+
+::-webkit-scrollbar{width: 6px !important; height: 6px !important;}
+::-webkit-scrollbar-thumb{background: #55555598;}
+::-webkit-scrollbar-track{background: #fff;}
+
+
+.medicineListBox::-webkit-scrollbar{width: 6px !important; height: 6px !important;}
+.medicineListBox::-webkit-scrollbar-thumb{background: var(--color-primary-variant) !important;}
+.medicineListBox::-webkit-scrollbar-track{background: #fff !important;}
+  
+  
+  
