@@ -87,7 +87,7 @@ const GenerateBill = () => {
           placeholder="Patient Name"
           value={patientName}
           onChange={(e) => setPatientName(e.target.value)}
-          className="border border-gray-300 p-2 rounded w-full "
+          className="border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring focus:ring-primary"
         />
         <input
           required
@@ -95,7 +95,7 @@ const GenerateBill = () => {
           placeholder="Mobile Number"
           value={mobile}
           onChange={(e) => setMobile(e.target.value)}
-          className="border border-gray-300 p-2 rounded w-full"
+          className="border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring focus:ring-primary"
         />
       </div>
 
@@ -107,7 +107,7 @@ const GenerateBill = () => {
           placeholder="Search Medicine..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="border border-gray-300 p-2 w-full md:w-1/2 rounded"
+          className="border border-gray-300 p-2 w-full md:w-1/2 rounded focus:outline-none focus:ring focus:ring-primary"
         />
       </div>
 
@@ -144,7 +144,7 @@ const GenerateBill = () => {
                     type="number"
                     min="1"
                     value={selected[med.id].quantity}
-                    className="border border-primary px-2 py-1 w-20 rounded"
+                    className="border border-gray-400 px-2 py-1 w-20 rounded focus:outline-none focus:ring focus:ring-primary"
                     onChange={(e) =>
                       handleQuantityChange(med.id, e.target.value)
                     }

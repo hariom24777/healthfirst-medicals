@@ -21,6 +21,12 @@ const EditMedicine = () => {
   }, [id]);
 
   const handleUpdate = () => {
+    // Basic validation to check for empty fields
+    if (!name.trim() || !category.trim() || !manufacturer.trim() || !price) {
+      alert("Please fill all the details before updating.");
+      return;
+    }
+
     const meds = JSON.parse(localStorage.getItem("medicines")) || [];
     const updated = meds.map((m) =>
       m.id === Number(id)
@@ -35,26 +41,28 @@ const EditMedicine = () => {
     <div className="p-6 max-w-md mx-auto border border-gray-300 shadow-md rounded-md mt-6">
       <h2 className="text-xl text-center font-bold mb-4">Edit Medicine</h2>
       <input
-        className="border border-gray-300 rounded p-2 w-full mb-2"
+        className="border border-gray-300 rounded p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
+        type="text"
+        placeholder="Medicine Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
-        className="border border-gray-300 rounded p-2 w-full mb-2"
+        className="border border-gray-300 rounded p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="text"
         placeholder="Category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       />
       <input
-        className="border border-gray-300 rounded p-2 w-full mb-2"
+        className="border border-gray-300 rounded p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="text"
         placeholder="Manufacturer Name"
         value={manufacturer}
         onChange={(e) => setManufacturer(e.target.value)}
       />
       <input
-        className="border border-gray-300 rounded p-2 w-full mb-2"
+        className="border border-gray-300 rounded p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="number"
         min={1}
         value={price}

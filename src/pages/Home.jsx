@@ -27,7 +27,7 @@ const Home = () => {
       <input
         type="text"
         placeholder="Search medicines..."
-        className="w-full py-4 px-6 rounded-2xl shadow mb-4 "
+        className="w-full py-4 px-6 rounded-2xl shadow mb-4 focus:outline-none focus:ring focus:ring-primary"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />

@@ -9,6 +9,13 @@ const AddMedicine = () => {
   const navigate = useNavigate();
 
   const handleAdd = () => {
+
+    // Basic validation to check for empty fields
+    if (!name.trim() || !category.trim() || !manufacturer.trim() || !price) {
+      alert("Please fill all the details before adding.");
+      return;
+    }
+
     const newMed = {
       id: Date.now(),
       name,
@@ -25,27 +32,27 @@ const AddMedicine = () => {
     <div className="px-6 py-12 max-w-md mx-auto mt-12 border border-gray-300 shadow-md rounded-lg">
       <h2 className="text-xl font-bold mb-4 text-center text-primary">Add Medicine</h2>
       <input
-        className="border border-gray-300 p-2 w-full mb-2"
+        className="border border-gray-300 p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         placeholder="Medicine name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
-        className="border border-gray-300 p-2 w-full mb-2"
+        className="border border-gray-300 p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="text"
         placeholder="Category (e.g. Tablet)"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       />
       <input
-        className="border border-gray-300 p-2 w-full mb-2"
+        className="border border-gray-300 p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="text"
         placeholder="Manufacturer Name"
         value={manufacturer}
         onChange={(e) => setManufacturer(e.target.value)}
       />
       <input
-        className="border border-gray-300 p-2 w-full mb-2"
+        className="border border-gray-300 p-2 w-full mb-2 focus:outline-none focus:ring focus:ring-primary"
         type="number"
         min={1}
         placeholder="Price"

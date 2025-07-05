@@ -19,7 +19,7 @@ const Login = () => {
       <h2 className="text-xl font-bold mb-6 text-center">Admin Login</h2>
       <input
         type="password"
-        className="border border-gray-300 p-2 mb-4 w-full rounded"
+        className="border border-gray-300 p-2 mb-4 w-full rounded focus:outline-none focus:ring focus:ring-primary"
         placeholder="Enter password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}

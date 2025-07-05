@@ -43,7 +43,7 @@ const AllBills = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search by Bill No, Name, Mobile or Date"
-          className="border border-gray-300 p-2 rounded w-full md:w-1/2"
+          className="border border-gray-300 p-2 rounded w-full md:w-1/2 focus:outline-none focus:ring focus:ring-primary"
         />
       </div>
 
