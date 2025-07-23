@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {  Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import AddMedicine from "./pages/AddMedicine";
@@ -12,7 +12,7 @@ const isAuthenticated = () => localStorage.getItem("admin") === "true";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,7 +37,7 @@ function App() {
         
         <Route path="/all-bills" element={<AllBills />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
