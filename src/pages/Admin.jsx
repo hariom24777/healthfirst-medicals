@@ -1,14 +1,22 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
+import defaultMedicines from "../data/defaultMedicines";
 
 const Admin = () => {
   const [medicines, setMedicines] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("medicines")) || [];
-    setMedicines(data);
+    const data = JSON.parse(localStorage.getItem("medicines"));
+
+    // If no medicines found in localStorage, use default data
+    if (!data || data.length === 0) {
+      localStorage.setItem("medicines", JSON.stringify(defaultMedicines));
+      setMedicines(defaultMedicines);
+    } else {
+      setMedicines(data);
+    }
   }, []);
 
   const handleDelete = (id) => {
