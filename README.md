@@ -4,15 +4,15 @@
 ---
 ## Features
 
-- ✅ **Admin Authentication**
-- 💊 **Add/Edit/Delete Medicines**
-- 🔍 **Search Medicines by Name**
-- 🧾 **Generate PDF Bill Receipts (using jsPDF)**
-- 📁 **Store and View All Bills (with filters)**
-- 📅 **Filter by Name, Date, Mobile, or Bill No**
-- 📦 **LocalStorage-based data persistence**
-- 📱 **Fully Responsive UI**
-- 📤 **PDF includes patient info, medicine list, totals, and billing metadata**
+- **Admin Authentication**
+- **Add/Edit/Delete Medicines**
+- **Search Medicines by Name**
+- **Generate PDF Bill Receipts (using jsPDF)**
+- **Store and View All Bills (with filters)**
+- **Filter by Name, Date, Mobile, or Bill No**
+- **LocalStorage-based data persistence**
+- **Fully Responsive UI**
+- **PDF includes patient info, medicine list, totals, and billing metadata**
 
 ---
 
